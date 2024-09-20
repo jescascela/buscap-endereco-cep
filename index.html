@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Autocompletar Endereço</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="card">
+		<h1>Busca Endereço pelo CEP</h1>
+		<form id="cep-form" method="POST">
+			<input type="text" name="cep" id="cep" placeholder="CEP" required>
+			<br>
+			<input type="text" name="rua" placeholder="Rua" id="rua" disabled>
+			<br>
+			<input type="number" name="numero" placeholder="Numero" id="numero" min="0" disabled>
+			<br>
+			<input type="text" name="bairro" placeholder="Bairro" id="bairro" disabled>
+			<br>
+			<input type="text" name="cidade" placeholder="Cidade" id="cidade" disabled>
+			<br>
+			<input type="text" name="estado" placeholder="Estado" id="estado" disabled>
+			<br>
+			<button id="btn-cep-form" disabled>Enviar</button>
+		</form>
+	</div>
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
